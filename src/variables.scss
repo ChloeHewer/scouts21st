@@ -1,0 +1,28 @@
+// variables
+$brand: #4c2177;
+$primary: #fff;
+$secondary: #000;
+$scouts: #004851;
+$beavers: #006ee0;
+$cubs: #37ab47;
+
+$brand-text: #4c2177;
+$primary-text: #fff;
+$secondary-text: #000;
+
+$sm-padding: 5px;
+$md-padding: 10px;
+$lg-padding: 15px;
+$xl-padding: 20px;
+
+$sm-margin: 5px;
+$md-margin: 10px;
+$lg-margin: 15px;
+$xl-margin: 20px;
+
+// inheritance
+%flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
