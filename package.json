@@ -12,6 +12,9 @@
     "react-scripts": "3.0.1",
     "typescript": "3.5.3"
   },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
