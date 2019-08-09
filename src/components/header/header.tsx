@@ -12,7 +12,7 @@ class Header extends React.Component<IProps, IState> {
       <header className={styles.header}>
         <section>
           <img src={scoutsWhiteLogo} alt="" className={styles.logo} />
-          <h1>21st Bristol Scouts Group</h1>
+          <h1>21st Bristol</h1>
         </section>
         <ul>
           <li>Home</li>

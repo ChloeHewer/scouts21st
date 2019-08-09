@@ -1,0 +1,80 @@
+@import "../../variables.scss";
+
+.home {
+  display: grid;
+  padding: $xl-padding * 4;
+  grid-template-areas:
+    "abo joi"
+    "new new"
+    "ima ima"
+    "act act";
+  grid-gap: $xl-margin * 3;
+  .section {
+    width: 100%;
+    @extend %flex-centered;
+    flex-direction: column;
+    padding: $lg-padding;
+    border-radius: $border-radius;
+    box-shadow: 0px 1px 2px 0px gray;
+    h2 {
+      width: 100%;
+      margin-bottom: $lg-margin;
+      font-size: 25pt;
+      color: $brand-text;
+      text-align: center;
+    }
+    .section-image {
+      width: 200px;
+      height: 200px;
+      border-radius: $border-radius;
+    }
+    article {
+      font-size: 16pt;
+      margin: $lg-margin;
+      text-align: justify;
+    }
+  }
+  .about-us {
+    grid-area: abo;
+    h2 {
+      color: $secondary-text;
+    }
+  }
+  .join-us {
+    grid-area: joi;
+    background-color: rgb(216, 216, 216);
+
+    .join-button {
+      width: fit-content;
+      padding: $md-padding;
+      @extend %flex-centered;
+      border-radius: $border-radius;
+      color: $primary-text;
+      background-color: $brand;
+      &:hover {
+        transform: scale(1.05);
+        color: chartreuse;
+        box-shadow: 0px 1px 3px 0px gray;
+        cursor: pointer;
+      }
+    }
+  }
+  .news {
+    grid-area: new;
+  }
+  .images {
+    grid-area: ima;
+    div {
+      @extend %flex-centered;
+      img {
+        width: 20%;
+        height: 200px;
+        border-radius: $border-radius;
+        margin: $sm-margin;
+      }
+    }
+  }
+  .activities {
+    grid-area: act;
+  }
+}

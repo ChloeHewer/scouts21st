@@ -3,16 +3,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: $secondary-text;
 }
-
 .App {
   width: 100vw;
   height: 100vh;
   main {
-    @extend %flex-centered;
+    margin-left: 175px;
+    width: calc(100vw-175px);
+    min-height: 100vh;
+    // @extend %flex-centered;
   }
-}
-
-.container {
-  // width: 700px;
 }

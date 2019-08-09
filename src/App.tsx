@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.scss";
-import HelloWorldContainer from "./containers/helloWorldContainer";
 import Header from "./components/header";
+import Home from "./components/home";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <HelloWorldContainer />
+        <Home />
       </main>
     </div>
   );
